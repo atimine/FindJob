@@ -1,0 +1,85 @@
+.home-search input {
+    font-size: 1.6rem;
+    border-radius: 5px !important;
+}
+
+.hps-location,
+.hps-distance {
+    width: 100%;
+}
+
+#hp-search-btn {
+    background: #5bb543 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='98' height='100' viewBox='0 0 98 100'%3E%3Cpath fill='%23fff' d='M56.58 58.3c7.8-6.5 10.43-21.61 2.68-30.53-7.6-8.74-21.03-11.09-30.5-4.31-9.5 6.78-12.18 20.39-5.84 30.22 5.78 8.96 21.06 15.14 33.66 4.63zm17.11-41.07c8 10.6 12.72 27.7 2.18 46l16.8 16.84c10.76 10.77-4.48 25.16-14.72 14.92L60.3 77.35c-17.05 8.44-39 5.78-52.4-13.99C-2.46 48.08.54 25.41 13.32 13.2 31.37-4.05 59.35-1.82 73.7 17.23z'/%3E%3C/svg%3E") no-repeat 90% center/1.4rem;
+    color: #fff;
+    border: 0;
+    font-size: 1.8rem;
+}
+
+#hp-search-btn:hover,
+#hp-search-btn:focus {
+    background-color: #219a00
+}
+
+@media all and (min-width: 48em) {
+    #home-search-new {
+        padding: 2rem 0 4rem;
+        background: -webkit-linear-gradient(#005da4, #003777);
+        background: linear-gradient(#005da4, #003777);
+    }
+
+    .site-cvlibrary-uk #home-search-new .container-1200 {
+        max-width: 105rem
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        margin: 0 0 0 0
+    }
+
+    .home-search {
+        position: relative;
+    }
+
+    #hp-search-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 1.1rem 4.5rem 1.1rem 2rem;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+}
+
+#home-search-new {
+    overflow: hidden;
+    background: #003777;
+    background: -webkit-radial-gradient(ellipse farthest-side, #005DA4, #003777);
+    background: radial-gradient(ellipse farthest-side, #005DA4, #003777);
+    border-top: hidden;
+}
+
+#home-search-new h1 {
+    text-align: left;
+    padding: 0;
+    font-family: "Capitana", Arial, Helvetica, sans-serif;
+    font-size: 4.6rem;
+    letter-spacing: -0.45px;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    color: #fff;
+    font-weight: bold
+}
+
+.h1-wrap {
+    margin: 0 0 2rem 0;
+}
+
+.hp-strapline-stats h2 {
+    font-family: 'Capitana', Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8%
+}
