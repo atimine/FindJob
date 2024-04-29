@@ -119,3 +119,10 @@
     transform: translateY(0);
     opacity: 1;
 }
+.homepage-modules {
+    display: flex;  
+    justify-content: space-around;
+}
+.homepage-modules > div{
+    margin-bottom: 1rem;
+}

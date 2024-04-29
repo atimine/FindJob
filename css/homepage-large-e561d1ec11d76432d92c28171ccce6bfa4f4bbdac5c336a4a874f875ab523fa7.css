@@ -669,7 +669,7 @@ a.hp-recruit-btn:hover {
 .feat-company--deliveroo .cvl-btn--blue {
     background-color: #00ccbc
 }
-
+/* 
 .homepage-modules {
     text-align: center;
     display: -webkit-box;
@@ -688,7 +688,7 @@ a.hp-recruit-btn:hover {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start
-}
+} */
 
 .homepage-module {
     display: -webkit-box;
