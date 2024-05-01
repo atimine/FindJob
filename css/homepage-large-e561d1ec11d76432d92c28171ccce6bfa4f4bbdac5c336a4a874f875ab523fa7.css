@@ -1080,14 +1080,6 @@ body#home header {
         width: 100%;
         z-index: 2
     }
-
-    .home-search input {
-        min-width: none
-    }
-
-    .home-search .hps-transition .advanced .home-search input#location {
-        margin-right: 0rem !important
-    }
 }
 
 .modules-wrapper {
@@ -1348,12 +1340,6 @@ body#home header {
     border-radius: 0.8rem 0rem 0rem 0.8rem !important
 }
 
-.home-search input,
-.home-search select {
-    height: 5rem;
-    padding-left: 1.5rem
-}
-
 .hps-jobtitle,
 .hps-location,
 .hps-sal-min,
@@ -1407,30 +1393,6 @@ body#home header {
     padding: 2rem;
     background-color: #003777;
     border-radius: 0.8rem
-}
-
-.home-search input::-webkit-input-placeholder,
-.home-search select::-webkit-input-placeholder {
-    color: #000
-}
-
-.home-search input::-moz-placeholder,
-.home-search select::-moz-placeholder {
-    color: #000
-}
-
-.home-search input:-ms-input-placeholder,
-.home-search select:-ms-input-placeholder {
-    color: #000
-}
-
-.home-search input::placeholder,
-.home-search select::placeholder {
-    color: #000
-}
-
-.home-search input #location {
-    margin-left: 0rem !important
 }
 
 .hp-search-more,
@@ -1534,25 +1496,9 @@ body#home header {
         display: none
     }
 
-    .home-search input,
-    .home-search select {
-        width: 100%;
-        padding-left: 1rem
-    }
-
-    .home-search input#location {
-        background-image: none
-    }
-
     .hps-location,
     .hp-loc {
         border-radius: 0.8rem !important
-    }
-}
-
-@media (min-width: 60em) and (max-width: 75em) {
-    .home-search input#location {
-        min-width: 27rem
     }
 }
 
