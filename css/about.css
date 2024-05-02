@@ -1,0 +1,28 @@
+/* core style */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'san-serif';
+    transition: all 0.2s ease-in-out;
+}
+.container{
+    width: 1420px;
+    margin: 0 auto;
+}
+
+/* Header section  */
+.fhome__search-new{
+    height: 550px;
+    background-color: #003b7c;
+}
+
+.ruyxatdan_utish{
+    background-color: #5bb543;  
+}
+
+.ruyxatdan_utish:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #219a00;
+    border-color: #219a00;
+}

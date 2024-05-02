@@ -17,7 +17,7 @@ hr{
 
 /* Header section  */
 .home__search-new{
-    height: 700px;
+    height: 550px;
     background-color: #003b7c;
 }
 
@@ -32,6 +32,29 @@ hr{
     border-color: #219a00;
 }
 
+/* Home search section */
+.home_search{
+    box-sizing: border-box;
+}
+.home__search-about{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.home__search-title{
+    font-weight: 600;
+    color: #fff;
+    font-size: 30px;
+}
+
+.home__search-subtitle{
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
 .home__search-bar{
     margin: 0 auto ;
     background-color: #154f8d;
@@ -40,7 +63,7 @@ hr{
 }
 
 .home__search-bar__div{
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .home__search-input {
