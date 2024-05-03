@@ -5,6 +5,7 @@
 }
 .site-header__main, .site-header-center{
     background-color: #fff !important;
+    position: relative;
 }
 .footer__list--split {
     padding: 0;
@@ -18,7 +19,16 @@
 .site-header--home .site-nav__list--left .site-nav__item {
     margin-right: .8rem
 }
-
+.site-nav{
+    width: 85%;
+    margin: 0 auto;
+}
+.site-nav img{
+    position: absolute;
+    width: 10%;
+    top: -1px;
+    left: 25px;
+}
 .site-header-center,
 .site-nav,
 .site-nav__list {

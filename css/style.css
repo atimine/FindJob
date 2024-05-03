@@ -174,6 +174,7 @@
 }
 .cards{
     margin: 0 auto;
+    width: 90%;
     overflow: auto;
 }
 .cards-item {
@@ -182,8 +183,16 @@
     grid-template-rows: auto;
     gap: 10px;
 }
+.card-body{
+    /* display: grid;
+    grid-template-rows: 3fr; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .bg-image img{
     width: 586px;
+    height: 270px;
 }
 /* .cards-item img {
     box-shadow: 1px 1px 10px 0.1px lightgreen;
