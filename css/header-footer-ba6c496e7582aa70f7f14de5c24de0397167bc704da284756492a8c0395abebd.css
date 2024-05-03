@@ -3,7 +3,9 @@
         display: none !important
     }
 }
-
+.site-header__main, .site-header-center{
+    background-color: #fff !important;
+}
 .footer__list--split {
     padding: 0;
     list-style-type: none

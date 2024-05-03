@@ -172,23 +172,30 @@
     width: 50%;
     font-size: 20px !important;
 }
-
-.cards {
-    margin-inline: 10%;
-    background: red;
+.cards{
+    margin: 0 auto;
+    overflow: auto;
 }
-
-.cards-item img {
+.cards-item {
+    display: grid;
+    grid-template-columns:  auto auto auto ;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.bg-image img{
+    width: 586px;
+}
+/* .cards-item img {
     box-shadow: 1px 1px 10px 0.1px lightgreen;
     border-radius: 30px;
     width: 200px;
-}
+} */
 
-.cards-item img:hover {
+/* .bg-image:hover {
     animation-name: img;
     animation-duration: 3s;
     animation-timing-function: linear;
-}
+} */
 
 @keyframes img {
     100% {

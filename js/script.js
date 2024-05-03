@@ -44,3 +44,9 @@ window.addEventListener('scroll', function(){
         }
     }
   })
+
+  // MDB JS
+  // Initialization for ES Users
+    import { Ripple, initMDB } from "mdb-ui-kit";
+
+    initMDB({ Ripple });
