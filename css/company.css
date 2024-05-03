@@ -1,184 +1,191 @@
 /* core style */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', 'san-serif';
-    transition: all 0.2s ease-in-out;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', 'san-serif';
+	transition: all 0.2s ease-in-out;
 }
-.container{
-    width: 1420px;
-    margin: 0 auto;
+.container {
+	width: 1420px;
+	margin: 0 auto;
 }
 
-hr{
-    margin: 0;
-    color: #fff;
+hr {
+	margin: 0;
+	color: #fff;
 }
 
 /* Header section  */
-.home__search-new{
-    height: 550px;
-    background-color: #003b7c;
+.home__search-new {
+	height: 550px;
+	background-color: #003b7c;
 }
 
-.ruyxatdan_utish{
-    background-color: #5bb543;  
+.ruyxatdan_utish {
+	background-color: #5bb543;
 }
 
-.ruyxatdan_utish:hover{
-    color: #fff;
-    text-decoration: none;
-    background-color: #219a00;
-    border-color: #219a00;
+.ruyxatdan_utish:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #219a00;
+	border-color: #219a00;
+}
+
+.tizimga_kirish:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #219a00;
+	border-color: #219a00;
 }
 
 /* Home search section */
-.home_search{
-    box-sizing: border-box;
+.home_search {
+	box-sizing: border-box;
 }
-.home__search-about{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-
-.home__search-title{
-    font-weight: 600;
-    color: #fff;
-    font-size: 30px;
+.home__search-about {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 30px;
 }
 
-.home__search-subtitle{
-    font-weight: 400;
-    color: #fff;
-    font-size: 20px;
-    margin-top: 10px;
+.home__search-title {
+	font-weight: 600;
+	color: #fff;
+	font-size: 30px;
 }
 
-.home__search-bar{
-    margin: 0 auto ;
-    background-color: #154f8d;
-    height: 192px;
-    width: 790px;
+.home__search-subtitle {
+	font-weight: 400;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 10px;
 }
 
-.home__search-bar__div{
-    margin-top: 30px;
+.home__search-bar {
+	margin: 0 auto;
+	background-color: #154f8d;
+	height: 192px;
+	width: 790px;
+}
+
+.home__search-bar__div {
+	margin-top: 30px;
 }
 
 .home__search-input {
-    margin: 80px 10px 30px 90px;
-    padding: 10px 15px;
-    font-size: 14px;
-    width: 400px;
+	margin: 80px 10px 30px 90px;
+	padding: 10px 15px;
+	font-size: 14px;
+	width: 400px;
 }
 
-.home__search-button{
-    margin-top: 20px;
-    width: 200px;
-    padding: 12px 15px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer; 
-    align-items: middle;
-    color: #fff;
-    font-weight: 600;
-    background-color: #5bb543;
+.home__search-button {
+	margin-top: 20px;
+	width: 200px;
+	padding: 12px 15px;
+	font-size: 14px;
+	border-radius: 5px;
+	cursor: pointer;
+	align-items: middle;
+	color: #fff;
+	font-weight: 600;
+	background-color: #5bb543;
 }
 
-.home__search-button:hover{
-    color: #fff;
-    text-decoration: none;
-    background-color: #219a00;
-    border-color: #219a00;
+.home__search-button:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #219a00;
+	border-color: #219a00;
 }
 
-.home__search-button i{
-    margin-left: 5px;
+.home__search-button i {
+	margin-left: 5px;
 }
 
-.search__letter{
-    border: 1px solid #4488d5;
-    padding: 2px;
+.search__letter {
+	border: 1px solid #4488d5;
+	padding: 2px;
 }
 
-.search__letter-items{
-    margin: 0;
-    padding:0;
-    display: flex;
-    justify-content: space-around;
+.search__letter-items {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
 }
 
-.search__letter-items li{
-    margin:0;
-    margin-right: -3px;
-    position: relative;
-    top: 0;
-    border-top: 0;
-    border-bottom: 0;
-    padding: 5px 10px;
-    color: #fff;
-    font-size: 14px;
-    display: inline-block;
+.search__letter-items li {
+	margin: 0;
+	margin-right: -3px;
+	position: relative;
+	top: 0;
+	border-top: 0;
+	border-bottom: 0;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 14px;
+	display: inline-block;
 }
 
-.search__letter-items li:nth-child(2n){
-    border-left: 1px solid #4488d5;
-    border-right: 1px solid #4488d5;
+.search__letter-items li:nth-child(2n) {
+	border-left: 1px solid #4488d5;
+	border-right: 1px solid #4488d5;
 }
 
-#disable_li{
-    border-right: none;
+#disable_li {
+	border-right: none;
 }
 
 /* company card section */
-.box{
-    display: flex;
-    justify-content: space-around;
+.box {
+	display: flex;
+	justify-content: space-around;
 }
-.company__cards-item{
-    margin-top: 30px;
-    display: inline-block;
-    height: 400px;
-    width: 300px;
-    border: 1px solid #e4e6ea;
-    border-radius: 1rem;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.company__cards-image img{
-    width: 100%;
-    height: 180px;
+.company__cards-item {
+	margin-top: 30px;
+	margin-left: 15px;
+	display: inline-block;
+	height: 400px;
+	width: 300px;
+	border: 1px solid #e4e6ea;
+	border-radius: 1rem;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 
-.company__cards-description{
-    box-sizing: border-box;
-    padding: 20px 15px;
-
+.company__cards-image img {
+	width: 100%;
+	height: 180px;
 }
 
-.company__cards-description h3{
-    margin-top: 0;
-    font-size: 20px;
+.company__cards-description {
+	box-sizing: border-box;
+	padding: 20px 15px;
 }
 
-.company__cards-description p{
-    margin-top: 10px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #333333;
-    margin-bottom: 10px;
+.company__cards-description h3 {
+	margin-top: 0;
+	font-size: 20px;
 }
-.company__cards-description button{
-    margin-top: 25px;
-    padding: 10px 20px;
-    font-size: 14px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #005596;
-    border-radius: 5px;
+
+.company__cards-description p {
+	margin-top: 10px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #333333;
+	margin-bottom: 10px;
 }
-.company__cards-description button:hover{
-    background-color: #219a00;
+.company__cards-description button {
+	margin-top: 25px;
+	padding: 10px 20px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #005596;
+	border-radius: 5px;
+}
+.company__cards-description button:hover {
+	background-color: #219a00;
 }

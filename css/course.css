@@ -1,0 +1,30 @@
+/* core style */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', 'san-serif';
+	transition: all 0.2s ease-in-out;
+}
+.container {
+	width: 1420px;
+	margin: 0 auto;
+}
+
+/* Header section  */
+.ruyxatdan_utish {
+	background-color: #5bb543;
+}
+
+.tizimga_kirish:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #219a00;
+	border-color: #219a00;
+}
+
+.ruyxatdan_utish:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #219a00;
+	border-color: #219a00;
+}

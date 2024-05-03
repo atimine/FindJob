@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ish Qidirish</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WorkifIT.com</title>
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/styles-c6669c27430dfb2623b475f21cac92bdfdcd736fc062e769cebf1fe4d3964831.css">
     <link rel="stylesheet" href="css/layout-dd420e39fc3ac91020e820a6546b82ecc899305775a622c5464919aaf3158032.css">
@@ -35,6 +39,7 @@
         <i class="fas fa-angle-up"></i>
     </div>
 
+    <!-- Header section start -->
     <header class="site-header site-header--home site-header--logged-out site-header--cv-builder">
         <div class="site-header__main site-header-center">
             <div class="container-1200">
@@ -42,24 +47,27 @@
 
                     <ul class="site-nav__list site-nav__list--left">
 
-                        <li class="site-nav__item nav-new-search"><a class="btn btn-outline-success fs-4" style="color: #fff;">Ish
+                        <li class="site-nav__item nav-new-search"><a class="btn btn-primary text-white   fs-4"
+                                href="index.html">Ish
                                 Topish</a></li>
-                        <li class="site-nav__item nav-new-courses"><a class="btn btn-outline-success fs-4 courses"
-                                href="courses.html" style="color: #fff;"> Kurslar </a></li>
-                        <li class="site-nav__item nav-new-jbe"><a class="btn btn-outline-success fs-4"
-                                href="#" style="color: #fff;">Kampaniyalar </a></li>
-                        <li class="site-nav__item nav-new-az"><a class="btn btn-outline-success fs-4"
-                                href="#" style="color: #fff;">About </a></li>
+                        <li class="site-nav__item nav-new-courses"><a class="btn btn-primary text-white   fs-4 courses"
+                                href="courses.html"> Kurslar </a></li>
+                        <li class="site-nav__item nav-new-jbe"><a class="btn btn-primary text-white   fs-4"
+                                href="#">Kampaniyalar </a></li>
+                        <li class="site-nav__item nav-new-az"><a class="btn btn-primary text-white   fs-4"
+                                href="#">About </a></li>
 
                     </ul>
 
 
                     <ul class="site-nav__list site-nav__list--right">
 
-                        <li class="site-nav__item"><button class="btn btn-outline-success fs-4 ">Tizimga Kirish</button>
+                        <li class="site-nav__item"><button class="btn btn-outline-primary  fs-4 tizimga_kirish">Tizimga
+                                Kirish</button>
                         </li>
 
-                        <li class="site-nav__item"><a class="btn btn-success fs-4 m-1 ">Ro'yhatdan O'tish</a></li>
+                        <li class="site-nav__item"><a class="btn btn-primary  fs-4 m-1 ruyxatdan_utish">Ro'yhatdan
+                                O'tish</a></li>
 
                     </ul>
                 </nav>
@@ -67,8 +75,13 @@
         </div>
     </header>
 
+    <!-- Header section end -->
+
+    <!-- Main section start -->
     <main id="site-main" class="site-main">
         <div class="site-wrapper">
+
+            <!-- Home search start -->
             <section id="home-search-new">
                 <div class="container-1200">
 
@@ -89,24 +102,29 @@
                             </div>
 
                             <div class="hp-search-top">
-                                <input type="submit" class="btn btn-success " value="Ish Topish" style="padding-left: 40px;">
-                                <i class="bi bi-search" style="position: absolute; right: 118px; top: 23px; font-size: 24px;"></i>
+                                <input type="submit" class="btn btn-success " value="Ish Topish"
+                                    style="padding-left: 40px;">
+                                <i class="bi bi-search"
+                                    style="position: absolute; right: 118px; top: 23px; font-size: 24px;"></i>
                             </div>
 
                         </div>
                     </form>
                 </div>
-
+                <!-- jobs counter -->
                 <div class="hp-strapline-stats container-1200">
                     <h2>168,515 yangi ishlar<span> 9,695 kampaniya</span></h2>
                 </div>
+                <!-- jobs counter -->
 
+                <!-- Filter section start -->
                 <div class="seo-container reveal">
 
-                    <section>
+
+                    <div>
                         <div class="hp-seo-accordion__btns container-1200 l-flex sm-no">
-                            <button class="hp-seo-accordion__btn seo-industry" type="button"
-                                onclick="sortArr()"><i class="bi bi-filter fs-1">Filter</i></button>
+                            <button class="hp-seo-accordion__btn seo-industry" type="button" onclick="sortArr()"><i
+                                    class="bi bi-filter fs-1">Filter</i></button>
                             <button class="hp-seo-accordion__btn seo-location" type="button">Lorem</button>
                             <button class="hp-seo-accordion__btn seo-popular" type="button">Lorem</button>
                             <button class="hp-seo-accordion__btn seo-company" type="button">Lorem</button>
@@ -161,11 +179,14 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
-            </section>
+                    </div>
 
-            <section id="cand-services">
+                </div>
+                <!-- Filter section end -->
+            </section>
+            <!-- Home serach end -->
+
+            <div id="cand-services">
                 <div class="container-1200">
                     <div class="hp-seo">
                         <h2 class="hp-title">Lorem</h2>
@@ -174,41 +195,54 @@
                         </p>
                     </div>
                 </div>
-            </section>
-            <section class="modules-wrapper">
+            </div>
+
+            <!-- Jobs about secton start -->
+            <div class="modules-wrapper">
                 <div class="container-1200">
                     <div class="homepage-modules">
                         <div class="card" style="width: 30rem;">
-                            <img src="/img/card-img.jpg" class="card-img-top" alt="...">
+                            <img src="./images/card-img.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Backend</h5>
-                              <p class="card-text">Back-end development means working on server-side software, which focuses on everything you can't see on a website. Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, application programming interface (APIs), architecture, and servers.</p>
-                              <a href="#" class="btn btn-primary mt-5">More..</a>
+                                <h5 class="card-title">Backend</h5>
+                                <p class="card-text">Back-end development means working on server-side software, which
+                                    focuses on everything you can't see on a website. Back-end developers ensure the
+                                    website performs correctly, focusing on databases, back-end logic, application
+                                    programming interface (APIs), architecture, and servers.</p>
+                                <a href="#" class="btn btn-primary mt-5">More..</a>
                             </div>
                         </div>
                         <div class="card" style="width: 30rem;">
-                            <img src="/img/card-img.jpg" class="card-img-top" alt="...">
+                            <img src="./images/card-img.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Fronend</h5>
-                              <p class="card-text">A front-end developer builds the front-end portion of websites and web applications—the part users see and interact with. A front-end developer creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app.</p>
-                              <a href="#" class="btn btn-primary mt-5">More..</a>
+                                <h5 class="card-title">Fronend</h5>
+                                <p class="card-text">A front-end developer builds the front-end portion of websites and
+                                    web applications—the part users see and interact with. A front-end developer creates
+                                    websites and applications using web languages such as HTML, CSS, and JavaScript that
+                                    allow users to access and interact with the site or app.</p>
+                                <a href="#" class="btn btn-primary mt-5">More..</a>
                             </div>
                         </div>
                         <div class="card" style="width: 30rem;">
-                            <img src="/img/card-img.jpg" class="card-img-top" alt="...">
+                            <img src="./images/card-img.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Fullstack</h5>
-                              <p class="card-text">Full-stack developers design and create websites and applications for various platforms. A full-stack developer's job description might include the following: Develop and maintain web services and interfaces. Contribute to front-end and back-end development processes.</p>
-                              <a href="#" class="btn btn-primary mt-5">More..</a>
+                                <h5 class="card-title">Fullstack</h5>
+                                <p class="card-text">Full-stack developers design and create websites and applications
+                                    for various platforms. A full-stack developer's job description might include the
+                                    following: Develop and maintain web services and interfaces. Contribute to front-end
+                                    and back-end development processes.</p>
+                                <a href="#" class="btn btn-primary mt-5">More..</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+                <!-- Jobs about secton end -->
+            </div>
         </div>
     </main>
+    <!-- Main section end -->
 
-
+    <!-- Footer section start -->
     <footer class="footer">
         <div class="container-1200">
             <div class="footer__secondary">
@@ -223,9 +257,12 @@
             </div>
         </div>
     </footer>
+    <!-- Footer section end -->
 
     <script src="/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 
