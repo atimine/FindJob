@@ -1,3 +1,7 @@
+'use strict'
+
+window.addEventListener("DOMContentLoaded", () => {
+
 function sortArr() {
     let sort = document.querySelectorAll(".hp-seo-list__link"),
         arr = []
@@ -42,7 +46,54 @@ function sortArr() {
   })
 
   // MDB JS
-  // Initialization for ES Users
-    import { Ripple, initMDB } from "mdb-ui-kit";
 
-    initMDB({ Ripple });
+
+// login-modal
+
+const modalTrigger = document.querySelectorAll("[data-modal]"),
+modal = document.querySelector(".login-modal"),
+modalCloseBtn = document.querySelector("[data-close]");
+
+function closeModal() {
+modal.classList.add("hide");
+modal.classList.remove("show");
+document.body.style.overflow = "";
+}
+
+function openModal() {
+modal.classList.remove("hide");
+modal.classList.add("show");
+document.body.style.overflow = "hidden";
+clearInterval(modalTimerId);
+}
+
+modalTrigger.forEach((item) => {
+item.addEventListener("click", openModal);
+});
+
+modalCloseBtn.addEventListener("click", closeModal);
+
+modal.addEventListener("click", (e) => {
+// console.log(e.target);
+if (e.target == modal) {
+  closeModal();
+}
+});
+
+  
+
+const modalTimerId = setTimeout(openModal, 5000);
+
+// console.log(window.scrollY);
+
+function showMOdalByScroll() {
+if (
+  window.scrollY + document.documentElement.clientHeight >=
+  document.documentElement.scrollHeight - 1
+) {
+  openModal();
+  window.removeEventListener("scroll", showMOdalByScroll);
+}
+}
+window.addEventListener("scroll", showMOdalByScroll);
+});

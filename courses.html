@@ -23,12 +23,6 @@
     <link rel="stylesheet" media="(min-width: 48em)"
         href="css/homepage-large-e561d1ec11d76432d92c28171ccce6bfa4f4bbdac5c336a4a874f875ab523fa7.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- // MDB links -->
@@ -63,10 +57,10 @@
 
                     <ul class="site-nav__list site-nav__list--right">
 
-                        <li class="site-nav__item"><button class="btn btn-outline-primary  fs-4 ">Tizimga Kirish</button>
+                        <li class="site-nav__item"><button data-modal class="btn btn-outline-primary  fs-4 ">Tizimga Kirish</button>
                         </li>
 
-                        <li class="site-nav__item"><a class="btn btn-primary  fs-4 m-1 ">Ro'yhatdan O'tish</a></li>
+                        <li class="site-nav__item"><button data-modal class="btn btn-primary  fs-4 m-1 ">Ro'yhatdan O'tish</button></li>
 
                     </ul>
                 </nav>
@@ -115,7 +109,7 @@
                             <div class="card-body">
                               <h5 class="card-title fs-3">UI / UX Design Specialization</h5>
                               <p class="card-text fs-4 ">Design High-Impact User Experiences. Research, design, and prototype effective, visually-driven websites and apps.</p>
-                              <button class="btn btn-primary fs-3" data-mdb-ripple-init>Ko'rish<buttona>
+                              <button class="btn btn-primary fs-3" data-mdb-ripple-init data-modal>Ko'rish<buttona>
                             </div>
                         </div>
                         <div class="card">
@@ -128,7 +122,7 @@
                             <div class="card-body">
                               <h5 class="card-title fs-3">App Development Course</h5>
                               <p class="card-text fs-4 ">A starter course the gets you going with Flutter, covering text, images, layout, stateful widgets and building out a beautiful, simple app.</p>
-                              <button class="btn btn-primary fs-3 " data-mdb-ripple-init>Ko'rish</button>
+                              <button class="btn btn-primary fs-3 " data-mdb-ripple-init data-modal>Ko'rish</button>
                             </div>
                         </div>
                         <div class="card">
@@ -141,7 +135,7 @@
                             <div class="card-body">
                               <h5 class="card-title fs-3">Backend Development For Senior Developers</h5>
                               <p class="card-text fs-4 "> Look no further! Introducing our comprehensive backend development course on Udemy, designed to take your skills to the next level.</p>
-                              <button class="btn btn-primary fs-3" data-mdb-ripple-init>Ko'rish</button>
+                              <button class="btn btn-primary fs-3" data-mdb-ripple-init data-modal>Ko'rish</button>
                             </div>
                         </div>
                         <div class="card">
@@ -154,7 +148,7 @@
                             <div class="card-body">
                               <h5 class="card-title fs-3">Front-End Web Development Course</h5>
                               <p class="card-text fs-4 ">Get started as a front-end web developer using HTML, CSS, JavaScript, jQuery, and Bootstrap!</p>
-                              <button class="btn btn-primary fs-3" data-mdb-ripple-init>Ko'rish</button>
+                              <button class="btn btn-primary fs-3" data-mdb-ripple-init data-modal>Ko'rish</button>
                             </div>
                         </div>
                         <div class="card">
@@ -167,7 +161,7 @@
                             <div class="card-body">
                               <h5 class="card-title fs-3">Learn English</h5>
                               <p class="card-text fs-4 ">Inspire confidence in your work with clear, effective communication in English</p>
-                              <button class="btn btn-primary fs-3" data-mdb-ripple-init>Ko'rish</button>
+                              <button class="btn btn-primary fs-3" data-mdb-ripple-init data-modal>Ko'rish</button>
                             </div>
                         </div>
                         <div class="card">
@@ -180,7 +174,7 @@
                             <div class="card-body">
                               <h5 class="card-title fs-3">Team Leadership</h5>
                               <p class="card-text fs-4 ">Your first step should be to build an effective leadership team! A leadership team is ultimately responsible for results—they uphold company culture, make important decisions, and can have a positive impact on employees.</p>
-                              <button class="btn btn-primary fs-3" data-mdb-ripple-init>Ko'rish</button>
+                              <button class="btn btn-primary fs-3" data-mdb-ripple-init data-modal>Ko'rish</button>
                             </div>
                         </div>
                     </div>
@@ -205,11 +199,73 @@
         </div>
     </footer>
 
-    <script src="/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <div class="login-modal">
+        <div class="center-div">
+            <div data-close class="modal__close">&times;</div>
+            <form class="form-control ">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" />
+                      <label class="form-label" for="form3Example1">First name</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" />
+                      <label class="form-label" for="form3Example2">Last name</label>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" />
+                  <label class="form-label" for="form3Example3">Email address</label>
+                </div>
+              
+                <!-- Password input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" />
+                  <label class="form-label" for="form3Example4">Password</label>
+                </div>
+              
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                  <label class="form-check-label" for="form2Example33">
+                    Subscribe to our newsletter
+                  </label>
+                </div>
+              
+                <!-- Submit button -->
+                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Sign up</button>
+              
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+              
+                  <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+              
+                  <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+              
+                  <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
+    <script src="/js/script.js"></script>
     <!-- // MDB scripts -->
     <script type="text/javascript" src="MDB5/src/js/mdb.free.umd.js"></script>
 </body>
