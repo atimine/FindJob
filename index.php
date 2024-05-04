@@ -43,13 +43,12 @@
                     <ul class="site-nav__list site-nav__list--left">
 
                         <li class="site-nav__item nav-new-search"><a class="btn btn-outline-primary  fs-4"
-                                href="index.html">Ish
+                                href="index.php">Ish
                                 Topish</a></li>
                         <li class="site-nav__item nav-new-courses"><a class="btn btn-outline-primary  fs-4 courses"
-                                href="courses.html"> Kurslar </a></li>
-                        <li class="site-nav__item nav-new-jbe"><a class="btn btn-outline-primary  fs-4" href="company.html"
+                                href="courses.php"> Kurslar </a></li>
+                        <li class="site-nav__item nav-new-jbe"><a class="btn btn-outline-primary  fs-4" href="company.php"
                             >Kampaniyalar </a></li>
-
 
                     </ul>
 

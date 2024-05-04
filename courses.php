@@ -43,11 +43,11 @@
                     <ul class="site-nav__list site-nav__list--left">
 
                         <li class="site-nav__item nav-new-search"><a class="btn btn-outline-primary  fs-4"
-                                href="index.html">Ish
+                                href="index.php">Ish
                                 Topish</a></li>
                         <li class="site-nav__item nav-new-courses"><a class="btn btn-outline-primary  fs-4 courses"
-                                href="courses.html"> Kurslar </a></li>
-                        <li class="site-nav__item nav-new-jbe"><a class="btn btn-outline-primary  fs-4" href="company.html"
+                                href="courses.php"> Kurslar </a></li>
+                        <li class="site-nav__item nav-new-jbe"><a class="btn btn-outline-primary  fs-4" href="company.php"
                             >Kampaniyalar </a></li>
 
 
@@ -201,35 +201,30 @@
     <div class="login-modal">
         <div class="center-div">
             <div data-close class="modal__close">&times;</div>
-            <form class="form-control ">
+            <form class="form-control" action="connectdb/connect.php" method="post">
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row mb-4">
                   <div class="col">
                     <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control" />
-                      <label class="form-label" for="form3Example1">First name</label>
+                      <input type="text" id="form3Example1" class="form-control" name="fullname"/>
+                      <label class="form-label" for="form3Example1">Full name</label>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" />
-                      <label class="form-label" for="form3Example2">Last name</label>
-                    </div>
-                  </div>
-                </div>
-              
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
+                  </div>                
+                  <div data-mdb-input-init class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" name="email"/>
                   <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-              
-                <!-- Password input -->
+                </div>                
                 <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
+                  <input type="password" id="form3Example4" class="form-control" name="password"/>
                   <label class="form-label" for="form3Example4">Password</label>
                 </div>
-              
+                  <div class="col">
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" name="job_type"/>
+                      <label class="form-label" for="form3Example2">Job type</label>
+                    </div>
+                  </div>
+                </div>
                 <!-- Checkbox -->
                 <div class="form-check d-flex justify-content-center mb-4">
                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
@@ -239,7 +234,7 @@
                 </div>
               
                 <!-- Submit button -->
-                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Sign up</button>
+                <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
               
                 <!-- Register buttons -->
                 <div class="text-center">
